@@ -153,4 +153,87 @@ inut[type=submit] {
 }
 .header__hero--tickets-link:hover {
   background-color: hsl(253deg, 82%, 42%);
+}
+
+@media screen and (max-width: 1100px) {
+  .header__nav--links {
+    flex-basis: 100%;
+    order: 3;
+  }
+  .header__hero {
+    gap: 2rem;
+  }
+  .header__hero--title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .padd {
+    padding: calc(1rem + 4vh) calc(1rem + 2vw);
+  }
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__nav--logo {
+    align-self: stretch;
+  }
+  .header__nav--cta {
+    align-self: center;
+  }
+  .header__nav--links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-image: linear-gradient(45deg, hsla(253deg, 82%, 42%, 0.9), hsla(327deg, 97%, 48%, 0.7));
+    padding: calc(2rem + 12vh) calc(2rem + 12vw);
+    transform: translateX(-100rem) rotate(-0.5turn);
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+  }
+  .header__nav--links.display__nav {
+    transform: translateX(0) rotate(0);
+  }
+  .header__nav--hamburger {
+    position: fixed;
+    top: 2.8rem;
+    right: 3rem;
+    height: 4rem;
+    width: 7rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+    padding: 0 1rem;
+    background-image: linear-gradient(45deg, hsla(253deg, 82%, 42%, 0.9), hsla(327deg, 97%, 48%, 0.7));
+    border-radius: 0.5rem;
+    z-index: 11;
+  }
+  .header__nav--hamburger .line {
+    height: 0.2rem;
+    background-color: hsl(216deg, 33%, 97%);
+    transition: all 0.3s ease-in-out;
+  }
+  .header__nav--hamburger .line:first-child {
+    width: 70%;
+    align-self: flex-end;
+  }
+  .header__nav--hamburger .line:first-child.line-toggled {
+    transform: rotate(45deg) translateX(-0.5rem) translateY(1rem);
+    width: 50%;
+  }
+  .header__nav--hamburger .line:last-child {
+    width: 100%;
+    align-self: center;
+  }
+  .header__nav--hamburger .line:last-child.line-toggled {
+    transform: rotate(-45deg) translateX(0.4rem) translateY(-0.2rem);
+    width: 50%;
+  }
+  .header__hero--location {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=main-style.css.map */
