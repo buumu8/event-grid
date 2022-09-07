@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+a,
+input[type=submit] {
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+input,
+fieldset,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [container-start] repeat(12, minmax(min-content, 12.5rem));
+  justify-content: center;
+}
+
+.overall-layout {
+  grid-column: container-start/container-end;
+}
+
+.sec-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.padd {
+  padding: calc(1rem + 8vh) calc(1rem + 8vw);
+}
+
+.sec-link,
+inut[type=submit] {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+}
+
+.sec-para {
+  font-size: 1.5rem;
+  color: hsl(238deg, 50%, 13%);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.sec-para span {
+  display: block;
+}
+
+.header {
+  background-image: url("../images/hero/hero-bg.jpg");
+  background-size: cover;
+  padding-bottom: calc(2rem + 12vh + 1rem + 6vh);
+  gap: calc(4rem + 4vw);
+}
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.header__nav--logo {
+  width: 20rem;
+}
+.header__nav--logo img {
+  height: 75%;
+  width: 75%;
+}
+.header__nav--links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.header__nav--links__link {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.header__nav--cta {
+  background-color: hsl(253deg, 82%, 42%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.header__nav--cta:hover {
+  background-color: hsl(327deg, 97%, 48%);
+}
+.header__hero {
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.header__hero--location {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: rgba(245, 247, 250, 0.2);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.header__hero--title {
+  font-size: calc(1rem + 2vw);
+  font-weight: 900;
+  line-height: 1.1;
+}
+.header__hero--title span {
+  display: block;
+}
+.header__hero--para {
+  color: hsl(0deg, 0%, 100%);
+}
+.header__hero--tickets-link {
+  background-color: hsl(327deg, 97%, 48%);
+}
+.header__hero--tickets-link:hover {
+  background-color: hsl(253deg, 82%, 42%);
+}/*# sourceMappingURL=main-style.css.map */

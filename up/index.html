@@ -5,18 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EventGrid - Book Your Next Event</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <title>EventGrids - Book Your Next Event</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main-style.css">
 </head>
 
 <body>
-    <h1>Event Title</h1>
+    <main class="container">
+        <header class="header overall-layout padd sec-flex ">
+            <nav class="header__nav">
+                <a href="#" class="header__nav--logo">
+                    <img src="./images/header/logo.svg" alt="Logo">
+                </a>
+                <div class="header__nav--hamburger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+                <ul class="header__nav--links">
+                    <a href="#" class="header__nav--links__link">Home</a>
+                    <a href="gallery.html" class="header__nav--links__link"
+                        target="_blank">Gallery</a>
+                    <a href="pricing.html" class="header__nav--links__link"
+                        target="_blank">Pricing</a>
+                    <a href="schedule.html" class="header__nav--links__link"
+                        target="_blank">Schedule</a>
+                    <a href="speakers.html" class="header__nav--links__link"
+                        target="_blank">Speakers</a>
+                    <a href="blog.html" class="header__nav--links__link" target="_blank">Blog</a>
+                    <a href="contact.html" class="header__nav--links__link"
+                        target="_blank">Contact</a>
+                </ul>
+                <a href="pricing.html" class="header__nav--cta sec-link">Get tickets <i
+                        class="fas fa-ticket"></i></a>
+            </nav>
+            <section class="header__hero">
+                <p class="header__hero--location"><i class="fa-solid fa-location-dot"></i>WaterFront
+                    Hotel, London</p>
+                <h1 class="header__hero--title">
+                    The Largest Conference In <span>Europe</span>
+                </h1>
+                <p class="header__hero--para sec-para">Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Sint, ad? <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                </p>
+                <a href="pricing.html" class="header__hero--tickets-link sec-link">Buy Ticket
+                    Now</a>
+            </section>
+        </header>
+    </main>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
