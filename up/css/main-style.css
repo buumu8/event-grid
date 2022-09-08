@@ -155,6 +155,63 @@ inut[type=submit] {
   background-color: hsl(253deg, 82%, 42%);
 }
 
+.countdown {
+  background-color: hsl(216deg, 33%, 97%);
+  padding-bottom: 0;
+}
+.countdown__content {
+  background-image: url("../images/countdown/bg.png");
+  background-color: hsl(253deg, 82%, 42%);
+  border: 1rem solid rgba(245, 247, 250, 0.3);
+  translate: 0 -50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+.countdown__content::before, .countdown__content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.countdown__content::before {
+  left: 0;
+  background-image: url("../images/countdown/left-shape.png");
+}
+.countdown__content::after {
+  right: 0;
+  background-image: url("../images/countdown/right-shape.png");
+}
+.countdown__content--day, .countdown__content--hour, .countdown__content--minute, .countdown__content--second {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+}
+.countdown__content--day div, .countdown__content--hour div, .countdown__content--minute div, .countdown__content--second div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.countdown__content--day div p:first-child, .countdown__content--hour div p:first-child, .countdown__content--minute div p:first-child, .countdown__content--second div p:first-child {
+  font-size: calc(1rem + 2vw);
+  font-weight: 700;
+}
+.countdown__content--day div p:last-child, .countdown__content--hour div p:last-child, .countdown__content--minute div p:last-child, .countdown__content--second div p:last-child {
+  font-size: calc(1rem + 1vw);
+  font-weight: 400;
+}
+.countdown__content--day p, .countdown__content--hour p, .countdown__content--minute p, .countdown__content--second p {
+  color: hsl(0deg, 0%, 100%);
+  font-size: calc(1rem + 2vw);
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1100px) {
   .header__nav--links {
     flex-basis: 100%;
@@ -235,5 +292,27 @@ inut[type=submit] {
   }
   .header__hero--location {
     font-size: 1rem;
+  }
+  .countdown {
+    padding: 0;
+  }
+  .countdown__content {
+    flex-direction: column;
+    translate: 0 0;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+  .countdown__content::before, .countdown__content::after {
+    width: 50%;
+  }
+  .countdown__content::after {
+    background-position: right center;
+  }
+  .countdown__content--day, .countdown__content--hour, .countdown__content--minute, .countdown__content--second {
+    flex-direction: column;
+  }
+  .countdown__content--day div p:first-child, .countdown__content--hour div p:first-child, .countdown__content--minute div p:first-child, .countdown__content--second div p:first-child {
+    font-size: calc(2rem + 2.5vw);
   }
 }/*# sourceMappingURL=main-style.css.map */

@@ -94,4 +94,39 @@
       }
     }
   }
+
+  // --------------------------- COUNTDOWN
+  .countdown {
+    padding: 0;
+
+    &__content {
+      flex-direction: column;
+      translate: 0 0;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+
+      &::before,
+      &::after {
+        width: 50%;
+      }
+
+      &::after {
+        background-position: right center;
+      }
+
+      &--day,
+      &--hour,
+      &--minute,
+      &--second {
+        flex-direction: column;
+
+        div {
+          p:first-child {
+            font-size: type.font-size-d(mc);
+          }
+        }
+      }
+    }
+  }
 }
