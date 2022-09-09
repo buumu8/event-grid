@@ -562,6 +562,100 @@ inut[type=submit] {
   background-color: hsl(253deg, 82%, 42%);
 }
 
+.pricing {
+  background: linear-gradient(45deg, hsla(253deg, 82%, 42%, 0.9), hsla(327deg, 97%, 48%, 0.7)), url("../images/pricing/pricing-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.pricing__mini-title {
+  color: hsl(0deg, 0%, 100%);
+}
+.pricing__mini-title::before, .pricing__mini-title::after {
+  content: "";
+  background-color: clrs-color-theme("4");
+}
+.pricing__title, .pricing__desc {
+  color: hsl(0deg, 0%, 100%);
+}
+.pricing__container--plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 4rem 3rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease-in-out;
+}
+.pricing__container--plan:hover {
+  transform: translateY(-1rem);
+}
+.pricing__container--plan__type {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+.pricing__container--plan:nth-child(2n+1) .pricing__container--plan__type {
+  border: 2px solid hsl(253deg, 82%, 42%);
+  color: hsl(253deg, 82%, 42%);
+}
+.pricing__container--plan:nth-child(2n) .pricing__container--plan__type {
+  border: 2px solid hsl(327deg, 97%, 48%);
+  color: hsl(327deg, 97%, 48%);
+}
+.pricing__container--plan__ticket {
+  font-weight: 400;
+  text-align: center;
+}
+.pricing__container--plan__price {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.pricing__container--plan:nth-child(2n+1) .pricing__container--plan__get-ticket {
+  background-color: hsl(253deg, 82%, 42%);
+}
+.pricing__container--plan:nth-child(2n+1) .pricing__container--plan__get-ticket:hover {
+  background-color: hsl(327deg, 97%, 48%);
+}
+.pricing__container--plan:nth-child(2n) .pricing__container--plan__get-ticket {
+  background-color: hsl(327deg, 97%, 48%);
+}
+.pricing__container--plan:nth-child(2n) .pricing__container--plan__get-ticket:hover {
+  background-color: hsl(253deg, 82%, 42%);
+}
+.pricing__container--plan__get-ticket {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.pricing__container--plan__get-ticket::before, .pricing__container--plan__get-ticket::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  border-radius: 50%;
+  background-color: hsl(0deg, 0%, 100%);
+  border: 1px solid transparent;
+}
+.pricing__container--plan__get-ticket::before {
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+.pricing__container--plan__get-ticket::after {
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+}
+.pricing__container--plan__features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+.pricing__container--plan__features li {
+  font-size: 1.3rem;
+  color: rgba(17, 18, 50, 0.7);
+}
+
 @media screen and (max-width: 1100px) {
   .header__nav--links {
     flex-basis: 100%;
