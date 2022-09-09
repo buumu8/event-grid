@@ -1,0 +1,32 @@
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/gradients" as grad;
+@use "../general-styles/typography" as type;
+
+@media screen and (max-width: 500px) {
+  // --------------------------- EVENTS
+  .events {
+    .events {
+      &__timing {
+        &--event {
+          &__desc {
+            flex-direction: column;
+            row-gap: 2rem;
+
+            div {
+              gap: 2rem;
+              p:first-of-type {
+                text-align: center;
+              }
+
+              p:last-of-type {
+                flex-direction: column;
+                gap: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
