@@ -705,6 +705,65 @@ inut[type=submit] {
   text-align: left;
 }
 
+.blogs__container {
+  background-color: hsl(216deg, 33%, 97%);
+}
+.blogs__container--blog {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 2rem 2rem 3rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 2px 2px 15px rgba(115, 115, 115, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.blogs__container--blog:hover {
+  box-shadow: none;
+  transform: scale(0.97);
+}
+.blogs__container--blog__date {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background-color: hsl(327deg, 97%, 48%);
+  padding: 1rem;
+  border-radius: inherit;
+  color: hsl(0deg, 0%, 100%);
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.blogs__container--blog__date:hover {
+  background-color: hsl(253deg, 82%, 42%);
+}
+.blogs__container--blog__date span:first-child {
+  font-size: 2rem;
+}
+.blogs__container--blog__date span:last-child {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.blogs__container--blog__category {
+  color: hsl(253deg, 82%, 42%);
+  font-size: 1.5rem;
+  transition: inherit;
+}
+.blogs__container--blog__category:hover {
+  color: hsl(327deg, 97%, 48%);
+}
+.blogs__container--blog__desc {
+  font-weight: 400;
+}
+.blogs__container--blog__link {
+  background-color: hsl(253deg, 82%, 42%);
+  align-self: flex-start;
+}
+.blogs__container--blog__link:hover {
+  background-color: hsl(327deg, 97%, 48%);
+}
+
 @media screen and (max-width: 1100px) {
   .header__nav--links {
     flex-basis: 100%;
