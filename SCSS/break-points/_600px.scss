@@ -9,6 +9,15 @@
     padding: pad.padding-d-v(sc) pad.padding-d-h(s);
   }
 
+  .responsive-grid {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .sec-para {
+    margin-bottom: 2rem;
+  }
+
   // --------------------------- HEADER
   .header {
     &__nav {
@@ -128,5 +137,10 @@
         }
       }
     }
+  }
+  // --------------------------- ABOUT
+  .about {
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 }
