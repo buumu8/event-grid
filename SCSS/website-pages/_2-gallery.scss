@@ -1,0 +1,14 @@
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+.gallery__container--img {
+  overflow: hidden;
+  img {
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

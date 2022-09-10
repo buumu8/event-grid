@@ -21,7 +21,6 @@
 
   // --------------------------- EVENTS
   .events {
-
     &__timing {
       &--event {
         grid-template-columns: 1fr;
@@ -43,6 +42,19 @@
           justify-self: end;
         }
       }
+    }
+  }
+
+  // --------------------------- Blog Page
+  .blog-page .blogs__popular-feeds--content__feed {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+
+    &--img,
+    &--desc,
+    &--date {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
     }
   }
 }

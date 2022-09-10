@@ -29,4 +29,41 @@
       flex-basis: 30%;
     }
   }
+
+  // --------------------------- Blog Page
+  .blog-page {
+    flex-direction: column-reverse;
+
+    .blogs__popular-feeds {
+      row-gap: 0;
+
+      &--search {
+        padding: pad.padding-st-v(s) pad.padding-st-h(xs);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        fieldset {
+          padding: 0;
+
+          i {
+            display: none;
+          }
+        }
+      }
+
+      &--content {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+  // --------------------------- Contact
+  .contact {
+    flex-wrap: wrap;
+
+    &__content,
+    &__form {
+      flex-basis: 100%;
+    }
+  }
 }
